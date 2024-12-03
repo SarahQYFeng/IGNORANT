@@ -1,0 +1,268 @@
+ body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    overflow-x: hidden;
+}
+  
+/* Landing style */
+
+#shadowIgnorant {
+    position: absolute;
+    top: -37vh;
+    width: 95vw;
+    height: 95vh;
+    pointer-events: none;
+    transform: scale(0.97, -0.5) skew(0deg, 0deg);
+    transform-origin: bottom center;
+}
+  
+#mainIgnorant {
+    position: absolute;
+    top: 1vh;
+    width: 95vw;
+    height: 95vh;
+    pointer-events: none;
+}
+
+
+
+/* scroll down to see */
+  
+#landingBG {
+    position: absolute;
+    top: 80vh;
+    left: 0vw;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+/* draggable items */
+
+/* draggable masthead */
+#draggableBox {
+    position: absolute;
+    top: 120vh;
+    left: 10vh; 
+    width: 550px;
+    height: 360px;
+    background-color: rgba(173, 216, 230, 0);
+    position: absolute;
+    cursor: move;
+}
+
+#dragableIgnorant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#draggableMasthead {
+    position: absolute;
+    top: 40px;
+    left: 125px;
+    color: #2c72ff;
+    font-size: 24px;
+    font-family: 'Redaction', serif; 
+    font-style: italic;
+    z-index: 0;
+}
+
+/* draggable out now */
+#draggableBox2 {
+    position: absolute;
+    top: 130vh;
+    left: 60vh; 
+    width: 550px;
+    height: 210px;
+    background-color: rgba(173, 216, 230, 0);
+    position: absolute;
+    cursor: move;
+}
+
+#dragableIgnorant2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#draggableOutnow {
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    color: #2c72ff;
+    font-size: 24px;
+    font-family: 'Redaction', serif; 
+    font-style: italic;
+    z-index: 0;
+}
+
+/* draggable subscribe */
+#draggableBox3 {
+    position: absolute;
+    top: 100vh;
+    left: 110vh; 
+    width: 550px;
+    height: 210px;
+    background-color: rgba(173, 216, 230, 0);
+    position: absolute;
+    cursor: move;
+}
+
+#dragableIgnorant3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#draggableSubscribe {
+    position: absolute;
+    top: 30px;
+    left: 125px;
+    color: #2c72ff;
+    font-size: 24px;
+    font-family: 'Redaction', serif; 
+    font-style: italic;
+    z-index: 0;
+}
+
+
+
+/* masthead button */
+#mastheadBox {
+    position: absolute;
+    top: 2vh;
+    left: 3vh; 
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-color: #ff686800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#mastheadLogo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+  
+#mastheadText {
+    position: absolute;
+    top: 40px;
+    color: #2c72ff;
+    font-size: 14px;
+    font-family: 'Redaction', serif; 
+    font-style: normal;
+    transition: color 0.3s; 
+    z-index: 3;
+}
+
+/* outnow button */
+#outnowBox {
+    position: absolute;
+    top: 11vh;
+    left: 3vh; 
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-color: #ff686800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#outnowLogo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    transition: opacity 0.3s ease;
+}
+  
+#outnowText {
+    position: absolute;
+    top: 40px;
+    color: #2c72ff;
+    font-size: 14px;
+    font-family: 'Redaction', serif; 
+    font-style: normal;
+    transition: color 0.3s; 
+    z-index: 3;
+}
+
+/* subscribe button */
+#subscribeBox {
+    position: absolute;
+    top: 20vh;
+    left: 3vh; 
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-color: #ff686800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#subscribeLogo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    transition: opacity 0.3s ease;
+}
+  
+#subscribeText {
+    position: absolute;
+    top: 40px;
+    color: #2c72ff;
+    font-size: 14px;
+    font-family: 'Redaction', serif; 
+    font-style: normal;
+    transition: color 0.3s; 
+    z-index: 3;
+}
+
+
+/* loading typefaces */
+@font-face {
+    font-family: 'Redaction';
+    src: url('Fonts/Redaction20-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Redaction';
+    src: url('Fonts/Redaction20-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DiatypeMono';
+    src: url('Fonts/ABCDiatypeMono-Regular-Trial.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'DiatypeMono';
+  src: url('Fonts/ABCDiatypeMono-MediumItalic-Trial.otf') format('truetype');
+  font-weight: medium;
+  font-style: italic;
+}
+
+
+  

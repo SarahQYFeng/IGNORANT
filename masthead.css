@@ -1,0 +1,236 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    overflow-x: hidden;
+}
+
+/* Content style */
+#featherBG {
+    position: fixed;
+    top: -10vh;
+    left: -10vw;
+    height: 120vh;
+    width: 120vw;
+    pointer-events: none;
+    z-index: -2;
+}
+
+#feather {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#tocBG {
+    position: absolute;
+    top: 150px;
+    left: -880px;
+    height: 203%;
+    width: 203%;
+    overflow-y: scroll;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* object box styles */
+
+#largeLogo {
+    position: absolute;
+    top: 12vh;
+    left: 15vw;
+    width: 70%;
+    height: 70%;
+}
+
+#digitalBox {
+    position: absolute;
+    top: 60vh;
+    left: 40vw;
+    width: 350px;
+    height: 50px;
+    background-color: #ff000000;  
+    border: none;
+    z-index: 2;
+}
+
+#editorBox {
+    position: absolute;
+    top: 110vh;
+    left: 58vh;
+    width: 600px;
+    height: 160px;
+    background-color: #ff000000;  
+    border: none;
+    z-index: 2;
+}
+
+/* paragraph & object styles */
+p {
+    color: #474747;
+    font-size: 14px;
+    font-family: 'DiatypeMono', sans-serif; 
+    font-style: normal;
+}
+
+h1 {
+    color: #2c72ff;
+    font-size: 14px;
+    font-family: 'DiatypeMono', sans-serif; 
+    font-style: normal;
+}
+
+
+/* buttons */
+#toLanding {
+    position: absolute;
+    top: 175vh;
+    left:14vw;
+    width:200px;
+    height:80px;
+    border: none;
+    cursor: pointer;
+    background-color:rgba(255, 0, 0, 0);
+}
+
+/* masthead button */
+#mastheadBox {
+    position: absolute;
+    top: 2vh;
+    left: 3vh; 
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-color: #ff686800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#mastheadLogo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+}
+  
+#mastheadText {
+    position: absolute;
+    top: 40px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Redaction', serif; 
+    font-style: normal;
+    transition: color 0.3s; 
+    z-index: 3;
+}
+
+/* outnow button */
+#outnowBox {
+    position: absolute;
+    top: 11vh;
+    left: 3vh; 
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-color: #ff686800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#outnowLogo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    transition: opacity 0.3s ease;
+}
+  
+#outnowText {
+    position: absolute;
+    top: 40px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Redaction', serif; 
+    font-style: normal;
+    transition: color 0.3s; 
+    z-index: 3;
+}
+
+/* subscribe button */
+#subscribeBox {
+    position: absolute;
+    top: 20vh;
+    left: 3vh; 
+    width: 65px;
+    height: 65px;
+    margin: 0;
+    background-color: #ff686800;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#subscribeLogo {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    transition: opacity 0.3s ease;
+}
+  
+#subscribeText {
+    position: absolute;
+    top: 40px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Redaction', serif; 
+    font-style: normal;
+    transition: color 0.3s; 
+    z-index: 3;
+}
+
+
+
+/* loading typefaces */
+@font-face {
+    font-family: 'Redaction';
+    src: url('Fonts/Redaction20-Bold.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Redaction';
+    src: url('Fonts/Redaction20-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DiatypeMono';
+    src: url('Fonts/ABCDiatypeMono-Regular-Trial.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'DiatypeMono';
+  src: url('Fonts/ABCDiatypeMono-MediumItalic-Trial.otf') format('truetype');
+  font-weight: medium;
+  font-style: italic;
+}
